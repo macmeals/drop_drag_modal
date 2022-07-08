@@ -1,0 +1,39 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+    // "prettier/@typescript-eslint"→2021-02-21のFixで不要になった
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint"],
+  "rules": {
+    "indent": ["error", "tab"],
+    "linebreak-style": ["error", "windows"],
+    "quotes": ["error", "double"],
+    "semi": ["error", "always"],
+    "react/react-in-jsx-scope": "off",
+
+    // Typeはパスカルケースでないとエラーを出す。
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        // 「Type」の場合、パスカルケースを強制
+        "selector": "typeAlias",
+        "format": ["PascalCase"]
+      }
+    ]
+  }
+}
