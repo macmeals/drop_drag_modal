@@ -1,27 +1,33 @@
-export const cardData = [
+type Data = {
+  id: string;
+  title: string;
+  todo: string;
+};
+
+export const cardDatas: Data[] = [
   {
-    id: "１",
-    title: "庭の水やり",
-    todo: "実家の水やりをすること",
+    id: "1",
+    title: "task1",
+    todo: "task1",
   },
   {
-    id: "２",
-    title: "Reactの学習",
-    todo: "なんでもメモアプリを作成",
+    id: "2",
+    title: "task2",
+    todo: "task2",
   },
   {
-    id: "３",
-    title: "TypeScriptの実装",
-    todo: "TypeScriptの型付けをコンポーネントで実装",
+    id: "3",
+    title: "task3",
+    todo: "task3",
   },
   {
     id: "4",
-    title: "デザインカンプを作成",
-    todo: "デザインコンテストを実施して応募",
+    title: "task4",
+    todo: "task4",
   },
   {
     id: "5",
-    title: "イラスト",
-    todo: "イラストの練習（線画や色塗り）を毎日継続する",
+    title: "task5",
+    todo: "task5",
   },
 ];
