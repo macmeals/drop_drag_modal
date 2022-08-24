@@ -1,9 +1,5 @@
 import logo from "./logo.svg";
 import "./App.css";
-// import { cardDatas } from "./data/card";
-
-// import styled from "styled-components";
-// import { useState, useCallback } from "react";
 
 //認証のログインの際、ページを遍移する
 import { Router } from "./router/Router";
